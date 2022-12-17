@@ -31,14 +31,14 @@ const Home: NextPage<Props> = ({ allPosts }) => {
       </Head>
 
       <div className={styles.grid}>
-        {allPosts.map((post, i) => {
+        {allPosts.map((post: any, i: number) => {
           if (post.label == 'qiita') {
             return (
               <a href={post.url} className={styles.card} key={i}>
                 <h2>{post.title}</h2>
                 <p>{post.date}</p>
                 <ul>
-                  {post.tags?.map((tag, i) => (
+                  {post.tags?.map((tag: any, i: number) => (
                     <Tag key={i} tag={tag} />
                   ))}
                 </ul>
@@ -50,7 +50,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                 <h2>{post.title}</h2>
                 <p>{post.date}</p>
                 <ul>
-                  {post.tags?.map((tag, i) => (
+                  {post.tags?.map((tag: any, i: number) => (
                     <Tag key={i} tag={tag} />
                   ))}
                 </ul>
