@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './Layout.module.scss';
 
-const WEB_SITE_NAME = "4ki's home";
+const WEB_SITE_NAME = "4ki's website";
 
 const Layout: React.FC<{ children: any }> = ({ children }) => {
   return (
