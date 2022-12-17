@@ -1,0 +1,21 @@
+@import '../styles/variables.scss';
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include mq('md') {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.centeredCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 200px;
+}

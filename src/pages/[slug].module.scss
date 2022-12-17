@@ -1,0 +1,116 @@
+@import '../styles/variables.scss';
+
+.titleContainer {
+  font-size: medium;
+
+  p {
+    color: var(--color-primary-dark);
+  }
+}
+
+.content {
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  a {
+    color: #0f83fd;
+
+    &:hover {
+      border-bottom: solid 1px #0f82fd67;
+      opacity: 0.7;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+
+    overflow-wrap: break-word;
+	  word-break: keep-all;
+
+  }
+
+  table {
+    font-size: small;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  td {
+    color: var(--color-primary-dark);
+    code {
+      background-color: #282c34;
+      border-radius: 0.2rem;
+      padding: 0.3rem 0.4rem 0.2rem 0.4rem;
+      color: white;
+
+      font-size: medium;
+    }
+    line-height: 1.8rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 2rem 0;
+  }
+
+  pre {
+    code {
+      border-radius: 0.5rem;
+      overflow: auto;
+      line-height: 1.3rem;
+      font-size: large;
+      letter-spacing: 1.0px;
+    }
+  }
+
+  blockquote {
+    padding: 7px 16px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: var(--color-primary-dark);
+    border: solid 3px var(--color-primary-dark);
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+  }
+
+  overflow: scroll;
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+  }
+  tr {
+    border: 1px solid var(--color-primary-dark);
+  }
+  th {
+    text-align: center;
+    border: 1px solid var(--color-primary-dark);
+    background-color: var(--color-primary-light);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  td {
+    border: 1px solid var(--color-primary-dark);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  @include mq('md') {
+    padding: 1px 0.7rem;
+  }
+}

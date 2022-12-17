@@ -1,0 +1,76 @@
+@import '../styles/variables.scss';
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @include mq('md') {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tagContainer {
+  margin-top: 10px;
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.8rem;
+  background-color: rgba(128, 128, 128, 0.242);
+  border-radius: 0.2rem;
+  padding: 2px 4px 1px 4px;
+  height: 1.2rem;
+  margin: 0.2em;
+  display: inline-block;
+  vertical-align:middle;
+}
+
+
+.date {
+  padding: 0.5rem 0 0 0;
+  font-size: 0.8rem;
+  color: rgba(63, 63, 63, 0.242);
+}
+
+.cardLabel {
+  padding: 0 0.2rem 0 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.qiita {
+  background-color: #55c500;
+  color: white;
+}
+
+.cardContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+}
+
+.label {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.card {
+  background: transparent;
+  padding: 1.2rem;
+
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+
+  transition: 100ms ease-in;
+
+  &:hover {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    cursor: pointer;
+  }
+}
