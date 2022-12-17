@@ -10,7 +10,7 @@ type Post = {
   tags: string[];
 };
 
-const postsDirectory = path.join(process.cwd(), "contents");
+const postsDirectory = path.join(process.cwd(), "public/contents");
 
 /**
  * postsDirectory 以下のディレクトリ名を取得する
