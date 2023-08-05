@@ -6,9 +6,12 @@ tags: ["cosmos", "IBC"]
 
 # 目次
 
-これは[Escrow IBC: An IBC based protocol for fast trust-minimized bridging between Optimistic Rollups](https://eibc.dymension.xyz/)の日本語訳です。
 
 # Abstract
+
+（これは[Escrow IBC: An IBC based protocol for fast trust-minimized bridging between Optimistic Rollups](https://eibc.dymension.xyz/)の日本語訳です。）
+
+
 このペーパーでは、Optimistic Rollup間で信頼を最小限に抑えた瞬時のトークン転送を容易にするように設計されたブロックチェーン間通信ベースのプロトコルであるEscrow IBC について説明します。Optimistic Rollupは、ブロックチェーン テクノロジーの最も有望なスケーリング ソリューションとして浮上していますが、いくつかの問題があります。 eIBC は、IBC プロトコルを利用して、ユーザーが信頼を最小限に抑えた方法で、Fungibleな資産をソース Rollupから特殊なSettlement Layerに即座に移動できるようにします。これにより、あらゆるユーザーにインスタント ルーティング方法が開かれます。宛先Rollupは Settlement Layerに接続されており、ユーザー エクスペリエンスと開発者の利点が向上します。
 
 # 1 Introduction
